@@ -65,10 +65,10 @@ public class Main {
 			human.attack(monster);
 			// モンスターのHPが0以下になれば、モンスターは倒れ、そのモンスターをモンスターグループから削除
 		    if (monster.getHp() <= 0) {
-		    	monsters.remove(monsters);
+		    	monsters.remove(monster);
 		    }
 			// モンスターグループに誰もいなくなれば、人間グループの勝利
-		    if (monsters == null) {
+		    if (monsters.isEmpty()) {
 		    	break;
 		    }
 		    
@@ -82,10 +82,10 @@ public class Main {
 			monSter.attack(huMan);
 			// 人間のHPが0以下になれば、人間は倒れ、その人間をモンスターグループから削除
 			if (huMan.getHp() <= 0) {
-				humans.remove(humans);
+				humans.remove(huMan);
 			}
 			// 人間グループに誰もいなくなれば、人間グループの敗北
-			if (humans == null) {
+			if (humans.isEmpty()) {
 				break;
 			}
 			// 現在の各グループの状態を一覧表示

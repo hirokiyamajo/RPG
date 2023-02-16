@@ -9,6 +9,8 @@ public class Brave extends Human {
 		super(name, weapon);
 		int hp = Dice.get(170, 230);
 		int offensive = Dice.get(7, 13);
+		this.hp = hp;
+		this.offensive = offensive;
 	}
 	
 }

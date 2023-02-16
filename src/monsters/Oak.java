@@ -8,6 +8,8 @@ public class Oak extends Monster {
 		super(name, weapon);
 		int hp = Dice.get(170, 230);
 		int offensive = Dice.get(9,15);
+		this.hp = hp;
+		this.offensive = offensive;
 	}
 
 }

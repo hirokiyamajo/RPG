@@ -8,6 +8,8 @@ public class Slime extends Monster{
 		super(name, weapon);
 		int hp = Dice.get(70, 130);
 		int offensive = Dice.get(5, 11);
+		this.hp = hp;
+		this.offensive = offensive;
 	}
 
 }
